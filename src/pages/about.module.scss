@@ -1,0 +1,134 @@
+$white: #fff;
+$dark: #32363b;
+$grey: #898f9c;
+$primary: #1674ff;
+$light: #f6f8fa;
+$warning: #ffa116;
+$success: #2c974b;
+$danger: #db4437;
+
+.container {
+  width: 85rem;
+  max-width: 100%;
+  margin: 1rem auto;
+}
+.topBanner {
+  width: 100%;
+  h1 {
+    font-size: 10rem;
+    color: rgba($grey, 0.5);
+  }
+  h2 {
+    font-size: 4rem;
+    color: $dark;
+  }
+  .imgBox {
+    margin: 5rem 0 1rem 0;
+    img {
+      width: 100%;
+      border-radius: 2rem;
+    }
+  }
+}
+.qualities {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  .card {
+    position: relative;
+    padding: 1rem;
+    h1 {
+      font-size: 5rem;
+      text-align: center;
+      color: rgba($grey, 0.3);
+    }
+    h2 {
+      font-size: 1.8rem;
+      text-align: center;
+      color: $dark;
+    }
+    p {
+      line-height: 1.5;
+      width: 80%;
+      margin-left: 10%;
+      color: $grey;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 4rem 0;
+  .featureCard {
+    h1 {
+      color: $dark;
+      text-align: center;
+      line-height: 2;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    p {
+      width: 80%;
+      margin-left: 10%;
+      text-align: center;
+      line-height: 1.5;
+      color: $grey;
+    }
+    img {
+      width: 100%;
+    }
+    margin: 1rem 0;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .container {
+    width: calc(100% - 2rem);
+    margin: 1rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .qualities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .qualities {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .topBanner {
+    width: 100%;
+    h1 {
+      font-size: 5rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    .imgBox {
+      margin: 2rem 0 1rem 0;
+      img {
+        border-radius: 1rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .topBanner {
+    width: 100%;
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}

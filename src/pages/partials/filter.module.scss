@@ -1,0 +1,129 @@
+$white: #fff;
+$dark: #32363b;
+$grey: #898f9c;
+$primary: #1674ff;
+$light: #f6f8fa;
+$warning: #ffa116;
+$success: #2c974b;
+$danger: #db4437;
+
+.allFilters {
+  width: 100%;
+  padding: 0 1.5rem;
+}
+.filter {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.filterTitle {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  height: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: $dark;
+  strong {
+    margin-left: 1rem;
+  }
+}
+.filterData {
+  color: $dark;
+  span {
+    margin: 0 0.5rem;
+    font-weight: 400;
+    color: $dark;
+  }
+  div {
+    height: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  .active {
+    span {
+      font-weight: 600;
+      color: $primary !important;
+    }
+    font-weight: 500;
+  }
+}
+.filterData1 {
+  display: flex;
+  row-gap: 0.5rem;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  padding-left: 0.5rem;
+
+  div {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.1rem;
+    height: 1.8rem;
+    padding: 0 0.8rem;
+    border-radius: 5rem;
+    background-color: $light;
+    border: 1px solid rgba($grey, 0.2);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  span:last-child {
+    margin-left: 0.1rem;
+  }
+  .active {
+    background-color: $primary;
+    border: 1px solid rgba($grey, 0.2);
+    color: $white;
+  }
+}
+.filterData2 {
+  display: flex;
+  row-gap: 0.5rem;
+  flex-wrap: wrap;
+  column-gap: 0.4rem;
+  padding-left: 0.5rem;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    aspect-ratio: 1;
+    padding: 0 0.5rem;
+    border-radius: 5rem;
+    background-color: $light;
+    border: 1px solid rgba($grey, 0.2);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  span:last-child {
+    margin-left: 0.1rem;
+  }
+  .active {
+    background-color: $primary;
+    border: 1px solid rgba($grey, 0.2);
+    font-weight: 600;
+    color: $white;
+  }
+}
+.clear {
+  width: 5rem;
+  height: 2.2rem;
+  border-radius: 50rem;
+  border: 1px solid rgba($grey, 0.5);
+  background-color: $light;
+  float: right;
+  font-size: 1rem;
+}
+.hide {
+  display: none;
+}
