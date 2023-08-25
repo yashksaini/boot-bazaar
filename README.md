@@ -23,7 +23,7 @@ https://github.com/yashksaini/boot-bazaar/assets/101442489/d20780b6-194d-4564-99
 
 
 ## About the Project
-Boot Bazaar is a dynamic online destination for shoe enthusiasts. Crafted with React and CSS, it delivers an immersive shopping journey that seamlessly blends style and technology. With an extensive collection of shoes ranging from sports to fashion, Boot Bazaar caters to a wide audience.
+Boot Bazaar is a dynamic online destination for shoe enthusiasts. Crafted with React and SCSS, it delivers an immersive shopping journey that seamlessly blends style and technology. With an extensive collection of shoes ranging from sports to fashion, Boot Bazaar caters to a wide audience.
 
 The application presents a user-friendly interface divided into five distinct pages. The Home Page welcomes visitors with a curated selection of top products, inviting them to explore further. The About Page elaborates on the myriad features and benefits of the footwear collection, engaging potential customers.
 
